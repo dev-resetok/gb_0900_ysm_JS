@@ -1,0 +1,14 @@
+let datas = [];
+datas.push({ name: "김철수", age: 19 }, 2, "abcd", 4, 5, 6);
+// console.log(datas[0]);
+// console.log(datas.join(","));
+// console.log(datas.slice(1, 4));
+// console.log(datas.splice(1, 2, 1, 3));
+// console.log(datas.pop());
+// console.log(datas.shift());
+// console.log(datas.indexOf({ name: "김철수", age: 19 }));
+// let copiedDatas = [...datas];
+// copiedDatas.shift();
+// copiedDatas.pop();
+// console.log(copiedDatas);
+console.log(datas);
