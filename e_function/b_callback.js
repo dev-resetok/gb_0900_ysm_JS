@@ -150,3 +150,49 @@
 // 학생의 이름과 국어, 영어, 수학 점수를 입력받는다. 70점보다 낮은 과목이 하나
 // 라도 있을 경우에는 이름과 "낙제" 문구를 출력하고, 그렇지 않다면 이름과 평균점수를
 // 출력한다.
+
+// const getScore = (name, kor, eng, math, callback) => {
+//     if (callback) {
+//         callback(name, kor, eng, math);
+//     }
+// };
+
+// const checkPass = (name, kor, eng, math) => {
+//     let result = "";
+//     let avg = 0;
+//     avg = (kor + eng + math) / 3;
+//     result =
+//         kor >= 70 && eng >= 70 && math >= 70
+//             ? `${name}의 평균: ${avg}점`
+//             : `${name} 낙제`;
+
+//     console.log(result);
+// };
+
+// getScore("김철수", 70, 80, 90, checkPass);
+
+// 문제 3개 만들어서 팀원에게 공유
+
+// 1. 두 개의 숫자를 입력받아 차이를 구한 뒤, 그 차이가 5이상이면
+// true를, 그렇지 않으면 false를 출력하세요
+
+const getNumber = (number1, number2, callback) => {
+    let subtract = 0;
+    subtract = number1 > number2 ? number1 - number2 : number2 - number1;
+    if (callback) {
+        callback(subtract);
+    }
+};
+
+const checkSubtract = (subtract) => {
+    let check = false;
+    check = subtract >= 5 ? true : false;
+    console.log(check);
+};
+
+getNumber(1, 7, checkSubtract);
+
+// 2. 문자열과 문자를 입력받아 해당 문자가 문자열에 포함되어있는지
+// 확인하는 함수를 작성하세요
+
+// 3.숫자를 하나를 받아 짝수인지 홀수인지 검사 후  결과 출력
