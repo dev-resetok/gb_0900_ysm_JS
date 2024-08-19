@@ -84,24 +84,27 @@ const replyService = (() => {
 // 실습
 // 댓글 모듈 만들기(replyService)
 // 댓글 작성(write), 댓글 목록(getReplies), 댓글 수정(modify), 댓글 삭제(remove)
-const replyService = (() => {
-    const write = ({ userId, replyContent, postId }) => {};
+// const replyService = (() => {
+//     const write = ({ userId, replyContent, postId }) => {};
 
-    const getReplies = (postId, callback) => {
-        const replies = JSON.parse("");
-        if (callback) {
-            callback(replies);
-        }
-    };
+//     const getReplies = (postId, callback) => {
+//         const replies = JSON.parse("");
+//         if (callback) {
+//             callback(replies);
+//         }
+//     };
 
-    const modify = (reply) => {};
+//     const modify = (reply) => {};
 
-    const remove = (id) => {};
+//     const remove = (id) => {};
 
-    return {
-        write: write,
-        getReplies: getReplies,
-        modify: modify,
-        remove: remove,
-    };
-})();
+//     return {
+//         write: write,
+//         getReplies: getReplies,
+//         modify: modify,
+//         remove: remove,
+//     };
+// })();
+
+// // 다음 시간에 통신 배움!!
+// new Promise();
