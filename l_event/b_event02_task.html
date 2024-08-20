@@ -19,13 +19,15 @@
     <script>
         // focus된 input 태그의 테두리는 녹색으로,
         // blur된 input 태그의 테두리는 빨간색으로 설정
-        const input = document.querySelectorAll("input[type=text]");
-        input.forEach((input) => {
+        const inputs = document.querySelectorAll("input[type=text]");
+        inputs.forEach((input) => {
             input.addEventListener("blur", (e) => {
                 input.style.border = "1px solid red";
+                //  e.target.style.border = "1px solid red";
             });
             input.addEventListener("focus", (e) => {
                 input.style.border = "1px solid green";
+                //  e.target.style.border = "1px solid green";
             });
         });
     </script>
