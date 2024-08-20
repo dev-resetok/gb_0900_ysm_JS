@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM 실습</title>
+    </head>
+    <body>
+        <strong id="first-strong">STRONG 태그입니다.</strong>
+        <div>
+            <strong>STRONG 태그입니다.</strong>
+        </div>
+    </body>
+    <script>
+        // div 안에 있는 strong 태그에만 글자 크기를 기본 크기의 1.5배로 설정한다.
+        // div 안에 있지 않은 strong 태그에만 글자색을 핫핑크색으로 변경한다.
+        const strong = document.querySelector("div strong");
+        const firstStrong = document.getElementById("first-strong");
+        strong.style.fontSize = "1.5rem";
+        firstStrong.style.color = "hotpink";
+    </script>
+</html>
+
+<!-- 밑에거가 쌤코드 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DOM 실습</title>
+    </head>
+    <body>
+        <strong>STRONG 태그입니다.</strong>
+        <div id="strong-wrap">
+            <strong>STRONG 태그입니다.</strong>
+        </div>
+    </body>
+    <script>
+        // div 안에 있는 strong 태그에만 글자 크기를 기본 크기의 1.5배로 설정한다.
+        // div 안에 있지 않은 strong 태그에만 글자색을 핫핑크색으로 변경한다.
+        const strongWrap = document.getElementByTagName("div")[0];
+        const strong1 = strongWrap.firstElementChild;
+        const strong2 = strongWrap.previousElementSibling;
+
+        strong1.style.fontSize = "1.5rem";
+        strong2.style.color = "hotpink";
+    </script>
+</html> -->

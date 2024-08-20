@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>포커스, 블러 이벤트 실습</title>
+        <style>
+            input {
+                outline: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <input type="text" name="name" placeholder="이름" />
+            <input type="text" name="age" placeholder="나이" />
+        </form>
+    </body>
+    <script>
+        // focus된 input 태그의 테두리는 녹색으로,
+        // blur된 input 태그의 테두리는 빨간색으로 설정
+        const input = document.querySelectorAll("input[type=text]");
+        input.forEach((input) => {
+            input.addEventListener("blur", (e) => {
+                input.style.border = "1px solid red";
+            });
+            input.addEventListener("focus", (e) => {
+                input.style.border = "1px solid green";
+            });
+        });
+    </script>
+</html>
